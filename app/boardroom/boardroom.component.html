@@ -1,0 +1,28 @@
+<mat-drawer-container>
+  <mat-drawer #nav>drawer</mat-drawer>
+  <mat-drawer-content>
+    <mat-card color="accent" class="boardroom">
+      <mat-card-header>
+        <button type="button " mat-button (click)="nav.toggle()">
+          <mat-icon class="icon ">menu</mat-icon>
+        </button>
+        <mat-card-title>BOARDROOM</mat-card-title>
+
+        <mat-card-subtitle>Your challenge this week</mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <button mat-button>
+          <mat-icon>play_circle_filled</mat-icon> &nbsp; Intro
+        </button>
+        <br />
+        <button mat-button>
+          <mat-icon>library_books</mat-icon> &nbsp; Your objectives</button
+        ><br />
+        <button mat-button>
+          <mat-icon>contact_mail</mat-icon> &nbsp; Your buddy
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </mat-drawer-content>
+</mat-drawer-container>
